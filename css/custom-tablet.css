@@ -1,0 +1,33 @@
+/*Nicholas Altland CSS for Final Project, tablet*/
+
+body{
+    margin: auto;
+    max-width: 95%;
+    background-image:none;
+}
+
+header{
+    grid-template-areas:
+        "image"
+        "nav";
+    width:100%;
+    grid-template-columns: 100%;
+    border:none;
+}
+
+header > figure{
+    grid-area:image;
+    margin:0em;
+}
+
+img[alt~="logo"]{
+    width:100%;
+    float:right;
+}
+main{
+    width:90%;
+}
+
+footer{
+    width:90%;
+}

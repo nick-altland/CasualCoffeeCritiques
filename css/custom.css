@@ -1,0 +1,414 @@
+/*Nicholas Altland CSS, Final Project*/
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    
+}
+
+/*General CSS rules for the entire site*/
+body{
+    margin: auto;
+    max-width: 95%;
+    background-image:url("../images/background.jpg");
+    background-size:30%;
+    background-repeat: repeat;
+}
+
+header{
+    margin-bottom: 1em;
+    background-color:white;
+    border-bottom:solid #a35a2c;
+    border-right:solid #a35a2c;
+}
+
+nav{
+    margin-bottom: 1em;
+}
+
+p{
+    line-height: 1.5em;
+    margin-bottom:1.5em;
+    max-width:70ch;
+    margin:auto;
+}
+
+main{
+    width: 70%;
+    font-size:1.2em;
+    margin:auto;
+    border-bottom: .1em dashed black;
+    background:white;
+}
+
+main, footer, nav{
+    background-color:white;
+}
+
+main > h2{
+    font-size:3em;
+    margin:auto;
+    margin-bottom: .5em;
+    margin-top:1em;
+    width:100%;
+    text-align: center;
+}
+
+section > h3{
+    font-size:1.5em;
+    margin-bottom: 0.7em;
+}
+
+footer {
+    width:50%;
+    margin: 4em auto auto auto;
+}
+
+footer > p{
+    text-align: center;
+}
+
+footer > nav{
+    display:grid;
+    grid-template-areas:
+        "area1 area2 area3";
+    background-color: #F3F3F3;
+    padding: .5em;
+    width:100%;
+}
+
+/*CSS for the  header area*/
+header{
+    display: grid;
+    grid-template-areas:
+        "image nav";
+    grid-auto-columns: 40% 60%;
+    width:80%;
+    margin:auto;
+}
+
+header > figure{
+    grid-area:image;
+    margin:0em;
+    border-right:solid #a35a2c;
+    border-left:solid #a35a2c;
+}
+img[alt~="logo"]{
+    width:100%;
+    float:right
+}
+
+header > nav{
+    grid-area: nav;
+}
+
+
+/* CSS for NAV */
+
+nav{ 
+    padding: .5em;
+    display:grid;
+    grid-template-areas:
+        "area1 area2 area3";
+    width:95%;
+}
+
+.homepage, .dropdown-1, .dropdown-2{
+    margin:auto;
+    width:100%; 
+    text-align:center;      
+}
+
+.link{
+    background: none;
+    border:none;
+    text-decoration: none;
+    color:#777;
+    font-size:1.4em;
+    cursor:pointer;
+    padding: .3em;
+    width: 100%;
+}
+
+.dropdown-menu{
+    text-align:left;
+    display: none;
+    background-color:white;
+    position:absolute;
+    width: 15em;
+    padding: .75em;
+    border-radius: .25em;
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0, .1);
+}
+
+.dropdown-menu-2{
+    text-align:left;
+    display: none;
+    position: absolute;
+    width:10em;
+    background-color:white;
+    padding: .75em;
+    border-radius: .25em;
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0, .1);
+}
+
+.dropdown-links a{
+    display:grid;
+    gap: 1.5em;
+    color: black;
+    padding: .3em .2em;
+    text-decoration: none;
+    font-size:1.2em;
+    width:80%;
+}
+
+.dropdown-links a:hover {
+    background-color: #edb068;
+}
+
+.dropdown-1:hover .dropdown-menu{
+    display:grid;
+}
+
+.dropdown-2:hover .dropdown-menu-2{
+    display:grid;
+}
+
+.homepage:hover, .dropdown-1:hover, .dropdown-2:hover{
+    background-color:#edb068;
+}
+
+/* CSS for Footer */
+
+footer > article{
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    margin:auto;
+    gap:1em;
+    padding-bottom:3em;
+}
+
+footer > article h2{
+    padding-bottom:.5em;
+}
+
+footer > article a{
+    width:100%;
+    display:inline-block;
+    margin:auto;
+}
+
+footer section > p{
+    margin:0em;
+}
+
+/* General CSS for all the articles */
+
+article{
+    display: grid;                 
+    grid-gap: 2em;
+    width: 90%;
+    margin:auto;
+}
+
+article p{
+    font-size:1.2em;
+}
+
+.first > p:first-letter{
+    font-size:4em;
+    float: left;
+    line-height: 1;
+    padding:.1em .03em;
+    margin:0;
+}
+
+.last{
+    border-top: .1em solid black;
+    padding:1em 0em 0em 0em;
+    margin:.5em;
+}
+
+.last > p{
+    margin:1em;
+}
+
+/* CSS for Tables */
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    margin:1em;
+}
+
+td,th{
+    line-height:1.4em;
+    padding:.5em;
+    text-align: left;
+}
+
+th:hover, td:hover{
+    background-color:#e6ccb3;
+}
+
+th{
+    line-height:1.2em;
+    padding:.5em;
+    font-size:1.5em;
+}
+
+td{
+    border-left:solid black;
+}
+
+tr{
+    border-bottom:solid black
+}
+
+.fifth-table-row{
+    border-bottom:none;
+}
+
+
+/* Homepage CSS */
+
+.homePage .third{
+    display:grid;
+    grid-template-areas: 
+        "picture paragraph";
+    gap:2em;
+    align-items:center
+}
+
+.homePage .third > figure{
+    grid-area: picture;
+}
+
+.homePage > img{
+    height: auto;
+    width:15em;
+}
+
+/* kru CSS */
+
+.kru-coffee-collective .third{
+    display:grid;
+    grid-template-areas: 
+        "picture"
+        "paragraph";
+    gap:2em;
+    align-items:center
+}
+
+.kru-coffee-collective .third > figure{
+    grid-area: picture;
+}
+
+.kru-coffee-collective > img{
+    height: auto;
+    width:100%;
+}
+
+/* CSS for Form */
+
+.form section{
+    display: grid;                 
+    grid-gap: 0em;
+}
+
+.form fieldset{
+    margin-top:1em;
+}
+
+.form p:first-letter{
+    font-size:1em;
+    float: none;
+}
+
+.form > .post{    
+    text-align:left;
+    margin:0em;
+}
+.form fieldset{
+    border:.1em solid black;
+    margin:.5em;
+    padding:1em;
+}
+
+.form fieldset > h3{
+    text-align: center;
+    margin-bottom:1em;
+}
+
+.form label{
+    font-size:1.2em;
+    text-shadow:.05em .05em white;
+}
+
+.form [name="txtFeedback"]{
+    width:100%;
+    height:5em;
+}
+
+.form [type="checkbox"]{
+    color:aliceblue;
+    width:2em;
+}
+
+.form [type="radio"]{
+    color: orange;
+    width:2em;
+}
+
+.form [name="lstOrder"]{
+    width:15em;
+    height:5em;
+    font-size:1em;
+}
+
+.form [name="lstOrder"] > option:nth-child(even){
+    background-color: #ffe6c9;
+}
+
+.form [name="lstOrder"] > option:focus{
+    background-color: lightpink;
+}
+
+.form [type="text"],[type="tel"],[type="email"]{
+    background-color:whitesmoke;
+    color:black;
+    font-size:1.2em;
+}
+
+.form .button{
+    padding:1em;
+    height:3em;
+    width:100%;
+}
+
+.mistake{
+    line-height:0em;
+    color:red;
+    text-align:left;
+}
+
+.form .first h2{
+    text-align:center;
+}
+
+/* About page CSS */
+.about .first > p:first-letter{
+    font-size:1em;
+    float: none;
+    padding:0em;
+    margin:0em;
+}
+
+
+/* active page CSS */
+.activePage{
+    background-color:#ffe6c9;
+}
+
+

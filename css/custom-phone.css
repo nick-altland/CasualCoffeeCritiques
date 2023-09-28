@@ -1,0 +1,19 @@
+/*Nicholas Altland CSS for Final Project, phone*/
+
+.homePage .third{
+    display:grid;
+    grid-template-areas: 
+        "picture"
+        "paragraph";
+    gap:2em;
+    align-items:center
+}
+
+.homePage > img{
+    margin:auto;
+    width:20em;
+}
+
+.homePage > figure{
+    margin:auto;
+}
